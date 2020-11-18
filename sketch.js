@@ -5,7 +5,7 @@ let skeleton;
 let img;
 
 function preload(){
-  img = loadimage('assets/1.jpg');
+  img = loadImage('assets/1.jpg');
 }
 
 
@@ -67,7 +67,7 @@ function draw() {
 
     for (let i = 0; i < pose.keypoints.length; i++){
       let x = pose.keypoints[i].position.x;
-      let y = pose.Keypoints[i].position.y;
+      let y = pose.keypoints[i].position.y;
       fill(0,255,0);
       ellipse(x,y,16,16);
     }
