@@ -2,6 +2,7 @@ let video;
 let poseNet;
 let pose;
 let skeleton;
+let img;
 
 function preload(){
   img = loadimage('assets/1.jpg');
@@ -49,8 +50,8 @@ function draw() {
 
     //measure distance from camera by measuring distance between eyes
     let d = dist(eyeR.x, eyeR.y, eyeL.x, eyeL.y);
-    image(img, pose.rightEye.x, pose .eye.y, d);
-    image(img, pose.leftEye.x, pose .eye.y, d);
+    image(img, pose.rightEye.x, pose.rightEye.y, d);
+    image(img, pose.leftEye.x, pose.leftEye.y, d);
 
     //draw nose
     fill(245, 198, 218);
